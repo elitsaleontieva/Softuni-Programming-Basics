@@ -1,0 +1,50 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SmallShop
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var product = Console.ReadLine().ToLower();
+            var town = Console.ReadLine().ToLower();
+            var quantity = Double.Parse(Console.ReadLine());
+
+            double result;
+
+            if (town == "sofia")
+            {
+                if (product == "coffee") Console.WriteLine(result = 0.50 * quantity);
+                else if (product == "water") Console.WriteLine(result = 0.80 * quantity);
+                else if (product == "beer") Console.WriteLine(result = 1.20 * quantity);
+                else if (product == "sweets") Console.WriteLine(result = 1.45 * quantity);
+                else if (product == "peanuts") Console.WriteLine(result = 1.60 * quantity);
+
+
+            }
+            else if (town == "plovdiv")
+            {
+
+
+                if (product == "coffee") Console.WriteLine(0.40 * quantity);
+                else if (product == "water") Console.WriteLine(result = 0.70 * quantity);
+                else if (product == "beer") Console.WriteLine(result = 1.15 * quantity);
+                else if (product == "sweets") Console.WriteLine(result = 1.30 * quantity);
+                else if (product == "peanuts") Console.WriteLine(result = 1.50 * quantity);
+
+            }
+            else if (town == "varna")
+            {
+                if (product == "coffee") Console.WriteLine(result = 0.45 * quantity);
+                else if (product == "water") Console.WriteLine(result = 0.70 * quantity);
+                else if (product == "beer") Console.WriteLine(result = 1.10 * quantity);
+                else if (product == "sweets") Console.WriteLine(result = 1.35 * quantity);
+                else if (product == "peanuts") Console.WriteLine(result = 1.55 * quantity);
+            }
+        }
+    }
+}
